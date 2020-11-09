@@ -1,28 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <count-result></count-result>
+    <add-count></add-count>
+    <subtract-count></subtract-count>
+    <h2>Asynchronous</h2>
+    <async-add-count></async-add-count>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Result from "./components/Result.vue";
+import AddCount from "./components/AddCount.vue";
+import SubtractCount from "./components/SubtractCount.vue";
+import AsyncAddCount from "./components/AsyncAddCount.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    CountResult: Result,
+    AddCount,
+    SubtractCount,
+    AsyncAddCount,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
